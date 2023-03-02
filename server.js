@@ -11,7 +11,7 @@ app.use(require('./routes'));
 //require("dotenv").config();
 
 mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/social-network-API',{
-    //|| 'mongodb+srv://admin:Sheba1776@cluster0.f1agiti.mongodb.net/?retryWrites=true&w=majority', {
+    //|| 'mongodb+srv://admin:<password>@cluster0.f1agiti.mongodb.net/?retryWrites=true&w=majority', {
     useUnifiedTopology: true,  
     //useFindAndModify: false,
     useNewUrlParser: true,
