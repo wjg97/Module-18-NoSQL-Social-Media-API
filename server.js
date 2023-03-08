@@ -8,12 +8,9 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static('public'));
 app.use(require('./routes'));
-//require("dotenv").config();
 
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/social-network-API',{
-    //|| 'mongodb+srv://admin:<password>@cluster0.f1agiti.mongodb.net/?retryWrites=true&w=majority', {
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/social-network-API',{
     useUnifiedTopology: true,  
-    //useFindAndModify: false,
     useNewUrlParser: true,
 });
 
